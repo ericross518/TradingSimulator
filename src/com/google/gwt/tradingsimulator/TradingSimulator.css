@@ -1,0 +1,35 @@
+/** Add css rules here for your application. */
+.gwt-TextBox {
+	width: 10ex;
+}
+.barLabel {
+	text-align: right;
+	width: 8ex;
+	color:black;
+}
+.profitLossLabelBlack {
+	text-align: right;
+	width: 8ex;
+	color: black;
+}
+.profitLossLabelRed {
+	text-align: right;
+	width: 8ex;
+	color: red;
+}
+.profitLossLabelGreen {
+	text-align: right;
+	width: 8ex;
+	color: green;
+}
+.dateLabel {
+	font-weight: bold;
+	text-align: right;
+	width: 12ex;
+	color: black;
+}
+.priceLabel {
+	font-weight: bold;
+	text-align: right;
+	color: black;
+}

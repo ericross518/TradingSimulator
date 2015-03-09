@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module rename-to='tradingsimulator'>
+
+  <!-- Inherit the core Web Toolkit stuff.                        -->
+  <inherits name='com.google.gwt.user.User'/>
+  <inherits name='com.google.gwt.http.HTTP'/>
+
+  <!-- Inherit the default GWT style sheet.  You can change       -->
+  <!-- the theme of your GWT application by uncommenting          -->
+  <!-- any one of the following lines.                            -->
+  <inherits name='com.google.gwt.user.theme.standard.StandardResources'/>
+  <!-- <inherits name='com.google.gwt.user.theme.chrome.Chrome'/> -->
+  <!-- <inherits name='com.google.gwt.user.theme.dark.Dark'/>     -->
+
+  <!-- Other module inherits                                      -->
+  <!-- <inherits name='com.google.gwt.widgetideas.GWTCanvas'/>    -->
+  <!-- <inherits name='com.swtoolbox.canvasfont.SWTBCanvasFont'/> -->
+  <!-- <inherits name='com.swtb.font.SWTBFont'/>                  -->
+  <!-- Specify the app entry point class.                         -->
+  <entry-point class='com.google.gwt.tradingsimulator.client.TradingSimulator'/>
+  
+  <!-- Hack to force IE9 use use the "maybe" permutation of Canvas-->
+  <!-- This causes all browsers to download the Canvas code by    -->
+  <!-- preventing the default Canvas.gwt.xml from compiling out   -->
+  <!-- non-canvas code for non-canvas browsers                    -->
+  <replace-with class="com.google.gwt.canvas.client.Canvas.CanvasElementSupportDetectedMaybe">
+    <when-type-is class="com.google.gwt.canvas.client.Canvas.CanvasElementSupportDetector" />
+  </replace-with>
+
+  <!-- Specify the paths for translatable code                    -->
+  <source path='client'/>
+  <source path='shared'/>
+
+</module>

@@ -1,0 +1,36 @@
+/** Add css rules here for your application. */
+body, table td, select {
+  font-size: small;
+/* any IE */
+  font-size: expression('x-small');
+}
+.gwt-Button {
+  font-size: small;
+/* any IE */
+  font-size: expression('x-small');
+ }
+.gwt-TextBox {
+	width: 15ex;
+}
+.profitLossLabelBlack {
+	text-align: right;
+	color: black;
+}
+.profitLossLabelRed {
+	text-align: right;
+	color: red;
+}
+.profitLossLabelGreen {
+	text-align: right;
+	color: green;
+}
+.dateLabel {
+	font-weight: bold;
+	text-align: right;
+	color: black;
+}
+.priceLabel {
+	font-weight: bold;
+	text-align: right;
+	color: black;
+}
